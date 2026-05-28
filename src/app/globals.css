@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdf9f3;
+  --foreground: #2b1c14;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
+}
+
+/* Always warm parchment — suppress dark mode override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fdf9f3;
+    --foreground: #2b1c14;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind v4 serif utility */
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+/* Hide scrollbars for horizontal shelves */
+.overflow-x-auto::-webkit-scrollbar {
+  display: none;
+}
