@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# The Reading Room 📚
 
-## Getting Started
+A literary e-commerce platform for book lovers — built with a warm, book-themed aesthetic and a full shopping experience from browsing to checkout.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The Reading Room is a Next.js/Supabase e-commerce platform designed around the experience of browsing and buying books. It combines a curated catalog (sourced from the Google Books API and Project Gutenberg) with a complete purchase flow — multi-step checkout, simulated payments, and a review/ratings system — wrapped in a cozy, literary visual identity rather than a generic storefront look.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 📖 **Curated book catalog** — populated using the Google Books API and Project Gutenberg for realistic, varied listings
+- 🛒 **Multi-step checkout flow** — a guided purchase experience from cart to confirmation
+- 💳 **Simulated payment gateway** — full checkout UX without requiring real payment processing
+- ⭐ **Reviews & ratings** — components for users to leave reviews, plus report modals for moderation
+- 🎨 **Warm, book-themed design** — a distinctive visual identity built around the literary subject matter, not a default e-commerce template
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Frontend/Backend**: Next.js
+- **Database**: Supabase
+- **Data Sources**: Google Books API, Project Gutenberg
 
-To learn more about Next.js, take a look at the following resources:
+## Design Notes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Book catalog data (titles, authors, covers, descriptions) is sourced from the Google Books API and Project Gutenberg to simulate a realistic library; prices are simulated/randomly generated rather than pulled from real retail data, since this is a demonstration platform rather than a live storefront.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Status
 
-## Deploy on Vercel
+Core shopping experience implemented: catalog browsing, multi-step checkout, simulated payments, and the review/rating system with moderation support.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*A bookstore experience that feels like a bookstore — built for readers, not just shoppers.*
